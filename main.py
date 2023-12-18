@@ -194,11 +194,11 @@ def handle_private(message: pyrogram.types.messages_and_media.message.Message, c
 		upsta.start()
 		
 		if "Document" == msg_type:
-			gagan.send_document(message.chat.id, file, thumb=thumb, caption=msg.caption, caption_entities=msg.caption_entities, reply_to_message_id=message.id, progress=progress, progress_args=[message,"up"])
+			gagan.send_document(message.chat.id, file, thumb=thumb, caption=caption caption_entities=msg.caption_entities, reply_to_message_id=message.id, progress=progress, progress_args=[message,"up"])
 			
 
 		elif "Video" == msg_type:
-			gagan.send_video(message.chat.id, file, duration=msg.video.duration, width=msg.video.width, height=msg.video.height, thumb=thumb, caption=msg.caption, caption_entities=msg.caption_entities, reply_to_message_id=message.id, progress=progress, progress_args=[message,"up"])
+			gagan.send_video(message.chat.id, file, duration=msg.video.duration, width=msg.video.width, height=msg.video.height, thumb=thumb, caption=caption caption_entities=msg.caption_entities, reply_to_message_id=message.id, progress=progress, progress_args=[message,"up"])
 		
 
 		elif "Animation" == msg_type:
@@ -208,14 +208,14 @@ def handle_private(message: pyrogram.types.messages_and_media.message.Message, c
 			gagan.send_sticker(message.chat.id, file, reply_to_message_id=message.id)
 
 		elif "Voice" == msg_type:
-			gagan.send_voice(message.chat.id, file, caption=msg.caption, thumb=thumb, caption_entities=msg.caption_entities, reply_to_message_id=message.id, progress=progress, progress_args=[message,"up"])
+			gagan.send_voice(message.chat.id, file, caption=caption thumb=thumb, caption_entities=msg.caption_entities, reply_to_message_id=message.id, progress=progress, progress_args=[message,"up"])
 
 		elif "Audio" == msg_type:
-			gagan.send_audio(message.chat.id, file, caption=msg.caption, caption_entities=msg.caption_entities, reply_to_message_id=message.id, progress=progress, progress_args=[message,"up"])   
+			gagan.send_audio(message.chat.id, file, caption=caption caption_entities=msg.caption_entities, reply_to_message_id=message.id, progress=progress, progress_args=[message,"up"])   
 			
 
 		elif "Photo" == msg_type:
-			gagan.send_photo(message.chat.id, file, caption=msg.caption, caption_entities=msg.caption_entities, reply_to_message_id=message.id)
+			gagan.send_photo(message.chat.id, file, caption=caption caption_entities=msg.caption_entities, reply_to_message_id=message.id)
 
 		os.remove(file)
 		if os.path.exists(f'{message.id}upstatus.txt'): os.remove(f'{message.id}upstatus.txt')
