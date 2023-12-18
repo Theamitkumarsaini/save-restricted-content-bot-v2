@@ -33,7 +33,7 @@ def downstatus(statusfile,message):
 		with open(statusfile,"r") as downread:
 			txt = downread.read()
 		try:
-			gagan.edit_message_text(message.chat.id, message.id, f"__Downloaded__ : **{txt}**")
+			gagan.edit_message_text(message.chat.id, message.id, f"__Downloaded__ : **{txt}**\n\nBot Made with ❤️ by __**[Team SPY](https://t.me/+8UDNP64FhAU4ZTg1)**__")
 			time.sleep(10)
 		except:
 			time.sleep(5)
@@ -50,7 +50,7 @@ def upstatus(statusfile,message):
 		with open(statusfile,"r") as upread:
 			txt = upread.read()
 		try:
-			gagan.edit_message_text(message.chat.id, message.id, f"__Unrestricted(U)__ : **{txt}**")
+			gagan.edit_message_text(message.chat.id, message.id, f"__Unrestricted__ : **{txt}**\n\nBot Made with ❤️ by __**[Team SPY](https://t.me/+8UDNP64FhAU4ZTg1)**__")
 			time.sleep(10)
 		except:
 			time.sleep(5)
