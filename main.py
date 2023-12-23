@@ -177,7 +177,7 @@ def handle_private(message: pyrogram.types.messages_and_media.message.Message, c
 		msg_type = get_message_type(msg)
 	
 		thumb = 'thumb.jpg'
-		caption = f"{msg.caption}\n\n__Unrestricted by__ **[Team SPY](https://t.me/+8UDNP64FhAU4ZTg1)**" if msg.caption else "__Unrestricted by__ **[Team SPY](https://t.me/+8UDNP64FhAU4ZTg1)**"
+		caption = f"{msg.caption}\n\n__Unrestricted by__ ** [Team SPY](https://t.me/+8UDNP64FhAU4ZTg1) ** " if msg.caption else "__Unrestricted by__ **[Team SPY](https://t.me/+8UDNP64FhAU4ZTg1)** "
 		
 
 		if "Text" == msg_type:
