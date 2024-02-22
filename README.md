@@ -3,7 +3,7 @@
 *A Telegram Bot, Which can send you restricted content by it's post link*
 
 ---
-# Deploy on heroku made with love by Team SPY
+## Deploy on Heroku
 
 <a href="https://dashboard.heroku.com/new">
      <img height="30px" src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku">
