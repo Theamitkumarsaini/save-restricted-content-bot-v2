@@ -2,6 +2,9 @@
 
 *A Telegram Bot, Which can send you restricted content by it's post link*
 
+## Join Telegram
+Join Now - <a href="https://t.me/dev_gagan"> Click Here </a>
+
 ---
 ## Deploy on Heroku
 
